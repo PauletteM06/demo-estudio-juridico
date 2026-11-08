@@ -1,4 +1,10 @@
+/*Estilos base*/
+
 @use 'base/reset';
-@use 'base/variables' as v;
+@use 'base/variables';
 @use 'base/global';
-@use 'base/mixins' as m;
+@use 'base/mixins';
+
+/*Layout*/
+
+@use 'layout/header';

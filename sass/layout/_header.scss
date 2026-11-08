@@ -1,0 +1,91 @@
+@use '/sass/base/variables' as v;
+
+header{
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 120px;
+    margin-bottom: 20px;
+
+    img{
+        width: 140px;
+    }
+
+    .btn-hamburguer{
+        position: absolute;
+        right: 15px;
+        top: 13px;
+        border: none;
+        padding: 5px;
+        background-color: v.$bg-btns;
+        display: flex;
+        border-radius: 5px;
+        cursor: pointer;
+        z-index: 999;
+
+        img{
+            width: 25px;
+            height: 23px;
+        }
+
+        &:hover{
+            opacity: .8;
+        }
+    }
+
+    .nav{
+        display: none;
+        height: 100vh;
+        padding: 50px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 50%;
+        background-color: black;
+        opacity: .8;
+
+        ul{
+            margin-top: 50px;
+            text-align: right;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        ul > li > a{
+            color: v.$neutral;
+
+            &:hover{
+                color: v.$bg-btns;
+            }
+        }
+        
+    }
+
+    .active{
+        display: flex;
+    }
+
+    .enlace-asesoria{
+        display: flex;
+        background-color: v.$primary-color;
+        padding: 7px;
+        border-radius: 3px;
+        
+        a{
+            color: v.$bg-data;
+            font-size: .7rem;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+        
+        &:hover{
+            cursor: pointer;
+            background-color: v.$bg-btns;
+        }
+
+    }
+
+    
+ 
+}
