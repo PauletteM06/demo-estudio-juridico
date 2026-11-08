@@ -2,7 +2,7 @@
 
 .section-sobremi{
     padding: 20px;
-    background-color: v.$bg-body-section;
+    background-color: v.$bg-data;
 
     &-header{
 
@@ -73,7 +73,7 @@
         display: flex;
         flex-direction: column;
         gap: 15px;
-        margin-bottom: 10px;
+        margin-bottom: 30px;
         .container{
             display: flex;
             gap: 10px;
