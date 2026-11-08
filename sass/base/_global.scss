@@ -1,0 +1,18 @@
+@use 'variables' as v;
+
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: v.$font-family-body;
+    background-color: v.$neutral;
+    color: v.$color-body;
+}
+
+h1,
+h2,
+h3{
+    font-family: v.$font-family-headline;
+    color: v.$color-headline;
+}
