@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,19 +14,19 @@
 
         <nav class="nav-desktop">
             <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Sobre mi</a></li>
-                <li><a href="#">Especialidades</a></li>
-                <li><a href="#">Contacto</a></li>
+                <li><a href="#inicio" >Inicio</a></li>
+                <li><a href="#sobremi" >Sobre mí</a></li>
+                <li><a href="#especialidades" >Especialidades</a></li>
+                <li><a href="#contacto" >Contacto</a></li>
             </ul>
         </nav>
 
-        <button type="button">solicitar asesoría</button>
+        <a href="#contacto">solicitar asesoría</a>
     </header>
 
     <main>
         
-        <section class="section-hero">
+        <section class="section-hero" id="inicio">
             <div class="section-hero-display">
                 <div>
                     <p>Estudio jurídico en Chillán | Asesoría legal personalizada</p>
@@ -35,15 +35,21 @@
                     <p>Acompaño a personas y familias en la resolución de sus materias legales más sensibles, brindando orientación directa, transparente y estratégica en cada etapa del proceso, en Chillán y toda la Región de Ñuble.</p>
         
                     <div>
-                        <button>Solicitar asesoría por correo</button>
-                        <button>Conoce mis servicios</button>
+                        <a href="mailto:contacto@fuentesabogado.cl?subject=Solicitud%20de%20asesoría&body=Hola,%20quisiera%20solicitar%20una%20asesoría%20legal." target="_blank">
+                            <img src="assets/icons/mail.svg" alt="" aria-hidden="true">
+                            Solicitar asesoría por correo
+                        </a>
+                        <a href="#especialidades">Conoce mis servicios</a>
                     </div>
                 </div>
 
                 <div>
-                    <img src="assets/img/img principal.png" alt="Imagen Principal Del Estudio">
+                    <img src="assets/img/img principal.png" alt="Imagen principal del estudio jurídico">
                     <div>
-                        <p>Primera orientación legal</p>
+                        <p>
+                            <img src="assets/icons/scale.svg" alt="" aria-hidden="true">
+                            Primera orientación legal
+                        </p>
                         <p>Respuestas claras, realistas y sin tecnicismos complejos.</p>
                     </div>
                 </div>
@@ -56,11 +62,14 @@
             </div>
         </section>
 
-        <section class="section-sobremi">
-            <p>Trayectoria y Cercanía</p>
-            <h2>Comprometido con la defensa de tus derechos</h2>
+        <section class="section-sobremi" id="sobremi">
 
-            <div>
+            <div class="section-sobremi-header">
+                <p>Trayectoria y Cercanía</p>
+                <h2>Comprometido con la defensa de tus derechos</h2>
+            </div>
+
+            <div class="section-sobremi-img">
                 <img src="assets/img/alejandro fuentes abogado.png" alt="Abogado Alejandro Fuentes">
                 <div>
                     <h3>Alejandro Fuentes</h3>
@@ -68,57 +77,79 @@
                 </div>
             </div>
 
-            <p>Ejerzo el derecho con la convicción de que cada causa encierra la historia, el esfuerzo y la tranquilidad de una familia. Brindo una defensa legal empática, rigurosa y sin delegar tu caso a procuradores ni intermediarios.</p>
+            <div class="section-sobremi-description">
+                <p>Ejerzo el derecho con la convicción de que cada causa encierra la historia, el esfuerzo y la tranquilidad de una familia. Brindo una defensa legal empática, rigurosa y sin delegar tu caso a procuradores ni intermediarios.</p>
+            </div>
+
 
             <div class="section-sobremi-cards">
                 <div>
-                    <h3>Trato directo sin intermediarios</h3>
-                    <p>Habla siempre directamente con tu abogado titular en cada audiencia, presentación y reunión de avance.</p>
+                    <img src="assets/icons/deal.svg" alt="" aria-hidden="true">
+                    
+                    <div>
+                        <h3>Trato directo sin intermediarios</h3>
+                        <p>Habla siempre directamente con tu abogado titular en cada audiencia, presentación y reunión de avance.</p>
+                    </div>
                 </div>
 
                 <div>
-                    <h3>Claridad de honorarios y etapas</h3>
-                    <p>Sin sorpresas ni gastos imprevistos. Información transarente y presupuesto por escrito desde el primer día.</p>
+                    <img src="assets/icons/eye.svg" alt="" aria-hidden="true">
+
+                    <div>
+                        <h3>Claridad de honorarios y etapas</h3>
+                        <p>Sin sorpresas ni gastos imprevistos. Información transparente y presupuesto por escrito desde el primer día.</p>
+                    </div>
                 </div>
 
                 <div>
-                    <h3>Estrategias procesales adaptadas</h3>
-                    <p>Conocimiento profundo de los juzgados civiles, de letras y tribunales de alzada de Chillán y toda la Región de Ñuble.</p>
+                    <img src="assets/icons/law.svg" alt="" aria-hidden="true">
+                    <div>
+                        <h3>Estrategias procesales adaptadas</h3>
+                        <p>Conocimiento profundo de los juzgados civiles, de letras y tribunales de alzada de Chillán y toda la Región de Ñuble.</p>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section class="section-especialidades">
+        <section class="section-especialidades" id="especialidades">
             <p>Especialidades Jurídicas</p>
             <h2>Soluciones legales pensadas en ti</h2>
             <p>Asistencia jurídica, técnica y diligente orientada a la protección de tu patrimonio, estabilidad familiar e intereses patrimoniales en las principales ramas del derecho en Chile.</p>
 
             <div>
-                <div>
+                <article>
                     <div>
+                        <img src="assets/icons/civil-law.svg" alt="" aria-hidden="true">
                         <p>patrimonio & contratos</p>
                     </div>
 
                     <h3>Derecho Civil</h3>
-                </div>
-                <div>
+                    <p>Redacción y revisión de contratos, cobranzas judiciales y extrajudiciales, juicios de arrendamiento, indemnización de perjuicios, compraventa de inmuebles y defensa patrimonial oportuna.</p>
+                </article>
+
+                <article>
                     <div>
+                        <img src="assets/icons/users.svg" alt="" aria-hidden="true">
                         <p>cuidado & bienestar</p>
                     </div>
 
                     <h3>Derecho de Familia</h3>
-                </div>
-                <div>
+                    <p>Cuidado personal, pensiones de alimentos, relación directa y regular (visitas), divorcios de común acuerdo y unilaterales, y mediaciones familiares con resguardo del bienestar de tus hijos.</p>
+                </article>
+
+                <article>
                     <div>
+                        <img src="assets/icons/shield-check.svg" alt="" aria-hidden="true">
                         <p>prevención & pymes</p>
                     </div>
 
                     <h3>Asesoría Integral</h3>
-                </div>
+                    <p>Orientación jurídica preventiva para particulares y pymes locales. Constitución de sociedades, regularización de propiedades y consultas previas antes de tomar decisiones críticas.</p>
+                </article>
             </div>
         </section>
 
-        <section class="section-contacto">
+        <section class="section-contacto" id="contacto">
             <p>Canales de contacto</p>
             <h2>Hablemos de tu situación legal</h2>
             <p>Da el primer paso hacia una solución informada. Escríbeme o coordina una consulta presencial en mi oficina en Chillán o telemática desde cualquier lugar del país.</p>
@@ -129,11 +160,22 @@
                     <h3>¿Necesitas evaluar un caso urgente o agendar tu consulta?</h3>
                     <p>Escríbeme por WhatsApp indicando brevemente tu situación. Te responderé directamente para entregarte una primera orientación y fijar una reunión presencial o telemática.</p>
                     
-                    <a href="https://wa.me/56912345678?text=Hola,%20quisiera%20realizar%20una%20consulta." target="_blank" rel="noopener noreferrer">Iniciar conversación por WhatsApp</a>
+                    <a 
+                        href="https://wa.me/56912345678?text=Hola,%20quisiera%20realizar%20una%20consulta." 
+                        target="_blank" 
+                        rel="noopener noreferrer">
+                        
+                        <img src="assets/icons/message-circle.svg" alt="" aria-hidden="true">
+                        Iniciar conversación por WhatsApp
+                    </a>
                     <hr>
-                    <p>Atención presencial en Chillán y alrededores</p>
+                    <p>
+                        <img src="assets/icons/map-pin.svg" alt="" aria-hidden="true">
+                        Atención presencial en Chillán y alrededores
+                    </p>
 
                     <div>
+                        <img src="assets/icons/shield-check.svg" alt="">
                         <p><span>Compromiso de Confidencialidad: </span>Información amparada por secreto profesional conforme al Código de Ética. Respuesta en menos de 24h.</p>
                     </div>
                 </article>
@@ -141,12 +183,12 @@
                 <div>
                     <div>
                         <p>whatsapp y teléfono</p>
-                        <p>+56 9 1234 5678</p>
+                        <a >+56 9 1234 5678</a>
                     </div>
 
                     <div>
                         <p>correo electrónico</p>
-                        <p>contacto@fuentesabogado.cl</p>
+                        <a href="mailto:contacto@fuentesabogado.cl" target="_blank">contacto@fuentesabogado.cl</a>
                     </div>
 
                     <div>
@@ -176,10 +218,10 @@
         <div class="footer-links">
             <p>Enlaces de interés</p>
             <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Sobre mi</a></li>
-                <li><a href="#">Especialidades</a></li>
-                <li><a href="#">Contacto</a></li>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#sobremi">Sobre mí</a></li>
+                <li><a href="#especialidades">Especialidades</a></li>
+                <li><a href="#contacto">Contacto</a></li>
             </ul>
         </div>
 
@@ -192,7 +234,7 @@
         <hr>
 
         <div>
-            <p>copyright © 2024 Estudio Jurídico Alejandro Fuentes. Todos los derechos reservados.</p>
+            <p>© 2024 Estudio Jurídico Alejandro Fuentes. Todos los derechos reservados.</p>
         </div>
 
     </footer>
