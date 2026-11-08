@@ -1,0 +1,102 @@
+@use '/sass/base/variables' as v;
+
+.section-sobremi{
+    padding: 20px;
+    background-color: v.$bg-body-section;
+
+    &-header{
+
+        p::before{
+            content: '';
+            display: inline-block;
+            width: 35px;
+            height: 2px;
+            background-color: v.$bg-btns;
+            vertical-align: middle;
+            margin-right: 10px;
+        }
+
+        p{
+            font-weight: bold;
+            text-transform: uppercase;
+            color: v.$bg-btns;
+            letter-spacing: 1px;
+            font-size: .8rem;
+        }
+
+        h2{
+            font-size: 2.2rem;
+            text-align: left;
+            margin-bottom: 20px;
+        }
+    }
+
+    &-img{
+        position: relative;
+        
+        img{
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        &-info{
+            position: absolute;
+            top: 80%;
+            padding: 10px;
+            width: 100%;
+            background-color: rgba(0, 0, 0, .9);
+            border-radius: 0 0 10px 10px;
+            
+
+            h3{
+                font-family: v.$font-family-body;
+                color: v.$neutral;
+                margin-left: 10px;
+            }
+
+            p{
+                color: v.$secondary-color;
+                margin-left: 10px;
+            }   
+        }
+    }
+
+    &-description{
+        margin-top: 10px;
+        line-height: 1.6;
+        font-size: 1.2rem;
+        text-align: left;
+        margin-bottom: 30px;
+    }
+
+    &-cards{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        margin-bottom: 10px;
+        .container{
+            display: flex;
+            gap: 10px;
+            border-radius: 5px;
+            padding: 15px;
+            background-color: v.$neutral;
+
+            & div:first-child{
+                display: flex;
+                background-color: v.$bg-body-section;
+                height: 40px;
+                padding: 6px;
+                border-radius: 5px;
+
+            }
+
+            & div:nth-child(2){
+                h3{
+                    font-family: v.$font-family-body;
+                    margin-bottom: 5px;
+                }
+            }
+        }
+    }
+    
+}
