@@ -1,0 +1,58 @@
+@use '/sass/base/variables' as v;
+
+
+.footer{
+    padding: 20px;
+    background-color: v.$bg-body-section;
+    img{
+        width: 70%;
+        margin-bottom: 15px;
+    }
+
+    &-description{
+        line-height: 1.5;
+        margin-bottom: 30px;
+    }
+
+    &-links{
+        margin-bottom: 15px;
+        &-title{
+            font-family: v.$font-family-headline;
+            color: #000;
+            margin-bottom: 10px;
+            font-weight: bold
+        }
+
+        ul > li > a{
+            color: v.$color-body;
+
+            &:hover{
+                color: v.$bg-btns;
+            }
+        }
+
+        &-description{
+            line-height: 1.5;
+            margin-bottom: 15px;
+            width: 70%;
+        }
+
+        &-colegio{
+            display: flex;
+            justify-content: center;
+            background-color: v.$hover-icons;
+            color: v.$bg-btns;
+            width: 40%;
+            padding: 3px;
+            border-radius: 5px;
+            font-size: .7rem;
+            margin-bottom: 10px;
+        }
+    }
+
+    .derechos{
+        font-size: .6rem;
+        margin-top: 10px;
+    }
+}
+
