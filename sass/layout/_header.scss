@@ -7,8 +7,17 @@ header{
     gap: 120px;
     margin-bottom: 10px;
 
+    @media (min-width: 1024px) {
+        gap: 24px;
+        justify-content: space-between;
+    }
+
     img{
         width: 150px;
+
+        @media (min-width: 1024px) {
+            width: 200px;
+        }   
     }
 
     .btn-hamburguer{
@@ -31,6 +40,10 @@ header{
         &:hover{
             opacity: .8;
         }
+
+        @media (min-width: 1024px) {
+            display: none;
+        } 
     }
 
     .nav{
@@ -60,6 +73,37 @@ header{
                 color: v.$bg-btns;
             }
         }
+
+        @media (min-width: 1024px) {
+            display: flex;
+            position: static;
+            background-color: v.$neutral;
+            height: auto;
+            padding: 0;
+            opacity: 1;
+            text-transform: uppercase;
+            margin-left: 30%;
+
+            ul{
+                margin-top: 0;
+                text-align: center;
+                display: flex;
+                flex-direction: row;
+            }
+
+            ul > li:first-child{
+                font-weight: bold;
+            }
+
+            ul > li > a{
+                color: v.$primary-color;
+
+
+                &:hover{
+                    color: v.$bg-btns;
+                }
+            }
+        } 
         
     }
 
@@ -83,6 +127,16 @@ header{
         &:hover{
             cursor: pointer;
             background-color: v.$bg-btns;
+        }
+
+        @media(min-width: 1024px){
+            padding: 10px;
+            margin-right: 90px;
+
+            a{
+                font-size: .9rem;
+            }
+            
         }
 
     }
