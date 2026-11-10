@@ -103,14 +103,15 @@
                 }
 
             }
+            
+            &:hover{
+                .article-img{
+                    background-color: v.$hover-icons;
+                }
+            }
+            
             @media(min-width: 1024px){
                 padding: 30px;
-
-                &:hover{
-                    .article-img{
-                        background-color: v.$hover-icons;
-                    }
-                }
             }
         }
 

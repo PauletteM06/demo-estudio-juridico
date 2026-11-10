@@ -1,58 +1,97 @@
-@use '/sass/base/variables' as v;
+@use "/sass/base/variables" as v;
 
+.footer {
+  padding: 20px;
+  background-color: v.$bg-body-section;
+  img {
+    width: 70%;
+    margin-bottom: 15px;
+  }
 
-.footer{
-    padding: 20px;
-    background-color: v.$bg-body-section;
-    img{
-        width: 70%;
-        margin-bottom: 15px;
+  &-description {
+    line-height: 1.5;
+    margin-bottom: 30px;
+  }
+
+  &-links {
+    margin-bottom: 15px;
+    &-title {
+      font-family: v.$font-family-headline;
+      color: #000;
+      margin-bottom: 10px;
+      font-weight: bold;
     }
 
-    &-description{
-        line-height: 1.5;
-        margin-bottom: 30px;
+    ul > li > a {
+      color: v.$color-body;
+
+      &:hover {
+        color: v.$bg-btns;
+      }
+
+      @media (min-width: 1024px) {
+        line-height: 1.8;
+      }
     }
 
-    &-links{
-        margin-bottom: 15px;
-        &-title{
-            font-family: v.$font-family-headline;
-            color: #000;
-            margin-bottom: 10px;
-            font-weight: bold
-        }
+    &-description {
+      line-height: 1.5;
+      margin-bottom: 15px;
+      width: 70%;
+    }
 
-        ul > li > a{
-            color: v.$color-body;
+    &-colegio {
+      display: flex;
+      justify-content: center;
+      background-color: v.$hover-icons;
+      color: v.$bg-btns;
+      width: 40%;
+      padding: 3px;
+      border-radius: 5px;
+      font-size: 0.7rem;
+      margin-bottom: 10px;
+    }
 
-            &:hover{
-                color: v.$bg-btns;
-            }
-        }
+    @media (min-width: 1024px) {
+      margin-right: 80px;
 
-        &-description{
-            line-height: 1.5;
-            margin-bottom: 15px;
-            width: 70%;
-        }
+      &-title {
+        font-size: 1.2rem;
+      }
 
-        &-colegio{
-            display: flex;
-            justify-content: center;
-            background-color: v.$hover-icons;
-            color: v.$bg-btns;
-            width: 40%;
-            padding: 3px;
-            border-radius: 5px;
-            font-size: .7rem;
-            margin-bottom: 10px;
-        }
+      &-colegio{
+        font-size: .9rem;
+        width: 50%;
+        padding: 4px;
+      }
+    }
+  }
+
+  .derechos {
+    font-size: 0.6rem;
+    margin-top: 10px;
+  }
+
+  @media (min-width: 1024px) {
+    padding: 70px;
+
+    .footer-display {
+      display: flex;
+    }
+
+    img {
+      width: 40%;
+    }
+
+    &-description {
+      font-size: 0.9rem;
+      padding-right: 280px;
     }
 
     .derechos{
-        font-size: .6rem;
-        margin-top: 10px;
+        font-size: .7rem;
     }
-}
 
+  
+  }
+}
