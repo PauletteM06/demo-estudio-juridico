@@ -1,4 +1,5 @@
 @use "/sass/base/variables" as v;
+@use "/sass/base/mixins" as m;
 
 .section-sobremi {
   padding: 20px;
@@ -39,6 +40,9 @@
       text-align: left;
       margin-bottom: 20px;
     }
+
+    @include m.animation('up', 'translateY(40px)', 'translateY(0)');
+    @include m.reduceAnimation('up');
 
     @media (min-width: 1024px) {
       p {

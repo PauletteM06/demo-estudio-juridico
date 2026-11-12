@@ -1,4 +1,5 @@
 @use '/sass/base/variables' as v;
+@use '/sass/base/mixins' as m;
 
 .section-contacto {
     background-color: v.$bg-data;
@@ -41,6 +42,9 @@
             margin-bottom: 20px;
         }
     }
+
+     @include m.animation('up', 'translateY(40px)', 'translateY(0)');
+    @include m.reduceAnimation('up');
 
     &-description{
         margin-top: 10px;
