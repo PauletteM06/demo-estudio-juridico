@@ -59,10 +59,16 @@
         font-size: 1.2rem;
       }
 
-      &-colegio{
-        font-size: .9rem;
+      &-colegio {
+        font-size: 0.9rem;
         width: 50%;
         padding: 4px;
+      }
+    }
+
+    @media(min-width: 678px){
+      &-colegio{
+        width: 100%;
       }
     }
   }
@@ -88,10 +94,24 @@
       padding-right: 280px;
     }
 
-    .derechos{
-        font-size: .7rem;
+    .derechos {
+      font-size: 0.7rem;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .footer-display {
+      display: flex;
+      flex-direction: row;
+      gap: 20px;
     }
 
-  
+    img {
+      width: 30%;
+    }
+
+    &-description{
+      width: 70%;
+    }
   }
 }

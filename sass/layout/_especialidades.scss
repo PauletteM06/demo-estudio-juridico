@@ -87,6 +87,12 @@
                     gap: 20px;
                 }
 
+                @media(min-width:768px){
+                    flex-direction: column;
+                    align-items: start;
+                    gap: 20px;
+                }
+
                 p{
                     text-transform: uppercase;
                     color: v.$bg-btns;
@@ -156,6 +162,14 @@
         @media(min-width: 1024px){
             flex-direction: row;
             gap: 25px;
+        }
+
+        @media(min-width: 768px){
+            flex-direction: row;
+
+            article{
+                padding: 30px;
+            }
         }
 
         

@@ -101,6 +101,7 @@
                 }
 
             }
+
         }
 
         h3{
@@ -162,6 +163,8 @@
                     width: 25px;
                 }
             }
+
+            
         }
 
         hr{
@@ -229,6 +232,11 @@
             width: 40%;
         }
 
+        @media(min-width: 768px){
+            width: 70%;
+            margin-bottom: 30px;
+        }
+
     }
 
     &-canales{
@@ -268,17 +276,27 @@
                 color: #000;
             }
 
+            .enlace{
+                &:hover{
+                    cursor: pointer;
+                    color: v.$bg-btns;
+                }
+            }
+
         }
 
         @media(min-width: 1024px){
             gap: 20px;
 
             .container-canal{
+                display: flex;
+                flex-direction: column;
                 gap: 20px;
-                padding: 25px;
+                padding: 20px;
 
                 &-icon{
                     height: 40px;
+                    width: 30%;
                     padding: 10px;
                 }
 
@@ -291,6 +309,11 @@
                     margin-bottom: 10px;
                 }
             }
+        }
+
+        @media(min-width: 768px){
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
         }
 
     }
