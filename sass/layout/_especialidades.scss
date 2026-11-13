@@ -80,6 +80,7 @@
       border-radius: 7px;
       padding: 20px;
       background-color: v.$neutral;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
 
       & > div:first-child {
         display: flex;
@@ -115,7 +116,10 @@
         }
       }
 
-      &:hover {
+      &:hover, :focus-visible {
+        transform: translateY(-6px);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+
         .article-img {
           background-color: v.$hover-icons;
         }
